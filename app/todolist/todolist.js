@@ -1,10 +1,12 @@
 'use strict';
 
-angular.module('app.todolist', ['ngRoute'])
+angular
+  .module('app.todolist', ['ngRoute'])
+  .config(config);
 
-.config(['$routeProvider', function($routeProvider) {
+function config($routeProvider) {
   $routeProvider.when('/todolist', {
     templateUrl: 'todolist/todolist.html',
-    controller: 'app.todolist.PageCtrl'
+    controller: 'TodolistPageCtrl'
   });
-}]);
+}

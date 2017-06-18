@@ -5,23 +5,53 @@
         <div class="col-12">
           <div class="today">
             <h1>Today</h1>
-            <table style="width:100%">
+            <!--<table style="width:100%">
               <tr>
                 <td class="align-middle">
                   <span style="padding-left:0.5em">June 6 2017</span>
                 </td>
                 <td class="text-right">
-                  <button type="button" class="btn btn-link btn-sm">Edit</button>
+                  <button ng-if="edit===false" ng-click="startEdit()" type="button" class="btn btn-link btn-sm">Edit</button>
+                  <button ng-if="edit===true" ng-click="finishEdit()" type="button" class="btn btn-link btn-sm">Done</button>
                 </td>
               </tr>
-            </table>
+            </table>-->
+            <div class="row">
+              <div class="col-6 align-middle">
+                <span style="padding-left:0.5em">June 6 2017</span>
+              </div>
+              <div class="col-6 text-right">
+                <button ng-if="edit===false" ng-click="startEdit()" type="button" class="btn btn-link btn-sm">Edit</button>
+                <button ng-if="edit===true" ng-click="onDone()" type="button" class="btn btn-link btn-sm">Done</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <ul>
         <li class="task">
-          <input type="text" class="input-task" placeholder="+ add text">
+          <input type="text" ng-model="task" class="input-task" placeholder="+ add text" ng-keyup="$event.keyCode === 13 && addTask(task)">
+        </li>
+        <li class="task" ng-repeat="item in tasks track by $index">
+          <!--{{item.text}}-->
+          <table class="added-task">
+            <tr>
+              <td ng-show="$parent.edit" class="remove-col">
+                  <i ng-click="onRemove(item)" class="fa fa-minus-circle" aria-hidden="true"></i>
+              </td>
+              <td class="clickable" ng-click="onFinishTask(item);">
+                <span ng-hide="$parent.edit" class="text" ng-class="{'line-through':item.finished}">{{item.text}}</span>
+                <input ng-show="$parent.edit" type="text" ng-model="item.text" class="input-task" ng-disabled="!$parent.edit">
+              </td>
+              <td ng-show="$parent.edit" class="move">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </td>
+              <td ng-hide="$parent.edit" class="move-to" ng-click="moveToTmr(item);">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </td>
+            </tr>
+          </table>
         </li>
       </ul>
 
@@ -39,7 +69,6 @@
                 <td class="align-right">
                   <span style="padding-right:0.5em">June 6 2017</span>
                 </td>
-
               </tr>
             </table>
           </div>
@@ -47,13 +76,9 @@
       </div>
 
       <ul>
-        <li>
-          test
-
-        </li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
+        <li class="task" ng-repeat="item in tasks">
+          {{item.text}}
+        </li>     
       </ul>
     </section>
   </div>

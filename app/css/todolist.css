@@ -1,53 +1,82 @@
-  .note{
-      
-      border: solid 1px #dcdcdc;
-      /*width: 300px;*/
-      margin-top:2em;
-      /*height: 800px;*/
-      min-height: 85vh;
-      border-radius: 10px;
-      background-color: #ffffff;
+  
+body{
+  background-color: #eae9e9;
+  /*text-align: center;
+  color:#EEE;*/
+}
+.note{
+  border: solid 1px #dcdcdc;
+  /*width: 300px;*/
+  margin-top:2em;
+  /*height: 800px;*/
+  min-height: 85vh;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #828282;
+}
+.note li.task{
+  border-bottom: dotted 1px #c1c1c1;
+  padding:0.25em 0;
+  word-break:break-word;
+}
+.note ul{
+  list-style-type: none;
+  padding-left:1.5em;
+  margin-top:0.5em;
+}
+.note h1{
+  margin-top:0.5em;
+}
+.note .task .fa-minus-circle{
+  color:#F00;
+}
+.note .task .move-to{
+  width:1.5em;
+}
+.note .task .move i{
+  cursor: move;
+}
+.note .task i{
+  margin:0 0.25em;
+  cursor: pointer;
+}
+.added-task{
+  width:100%;
+}
+.note .task .added-task .input-task,
+.note .task .added-task .text{
+  font-style:italic;
+}
+.c{
+  display: inline-block;
+  /*font-size: 0;*/
+  margin-top:3em;
+}
+.today{
+  text-align: left;
+  /*margin-left: 0.5em;*/
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: dotted 1px #c1c1c1;
+}
+.tomorrow{
+  text-align: right;
+  /*margin-right: 0.5em;*/
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: dotted 1px #c1c1c1;;
+}
 
-      color: #828282;
-  }
-  .note h1{
-      margin-top:0.5em;
-  }
-  body{
-      background-color: #eae9e9;
-      /*text-align: center;
-      color:#EEE;*/
-  }
-  .c{
-      display: inline-block;
-      /*font-size: 0;*/
-      margin-top:3em;
-  }
-  .today{
-      text-align: left;
-      /*margin-left: 0.5em;*/
-      margin-top: 0.5em;
-      padding-bottom: 0.5em;
-      border-bottom: dotted 1px #c1c1c1;
-  }
-  .tomorrow{
-      text-align: right;
-      /*margin-right: 0.5em;*/
-      margin-top: 0.5em;
-      padding-bottom: 0.5em;
-      border-bottom: dotted 1px #c1c1c1;;
-  }
-  li.task{
-      border-bottom: dotted 1px #c1c1c1;
-      padding:0.25em 0;
-      word-break:break-word;
-  }
-  ul{
-      list-style-type: none;
-      padding-left:1.5em;
-      margin-top:0.5em;
-  }
-  .input-task,.input-task:focus{
-      border-width: 0;
-      width: 100%;
-  }
+.input-task,.input-task:focus{
+  border-width: 0;
+  width: 100%;
+}
+.input-task[disabled]{
+  background-color: #FFF;
+}
+.clickable{
+  cursor: pointer;
+}
+.line-through{
+  text-decoration: line-through;
+}
