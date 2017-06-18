@@ -6,7 +6,7 @@ This totolist consist of two lists:
 1. Today todolist
 2. Tomorrow todolist
 
-User can add remove delete task on each list.
+User can add,remove and reorder task on each list.
 
 
 
