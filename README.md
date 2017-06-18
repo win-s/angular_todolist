@@ -36,3 +36,5 @@ npm start
 Now browse to the app at [`localhost:8000/index.html`]
 
 ## Application
+
+![PlantUML model](http://www.plantuml.com/plantuml/png/TO_13e8m38RlUueUCP4NC9uqyG5qDyEXi4Qci2RRWZ7gkxiXPA1Xf-rh_syjbivRh3piq95anOrsVkzj8xYyKk21uMCEMhQMxpqJlp7Oll8yXM03sjHajL_iJBP9iy2bkPu2leES2_3eRav0oTmG6Y0Lai3ce8rsjGp5R1NVHsgvet1__oqLRBq4iWlvjQEXT2BRwOf2EfyU0QZKw8rEoRArSt5Q9xb7kgWTNF7hQFi0)
