@@ -14,15 +14,17 @@ todolist
 function TodolistBaseService($q){
   
   return {
+    //replace by each todolist type(today,tomorrow)
     model:{
       getModel:function(){},
       setModel:function(){}
-    },//replace by each todolist type
+    },
+    //overload this function when loading data from server
     load:function(){
       var deferred = $q.defer();
       deferred.resolve();
       return deferred;
-    },//overload this function when loading from server
+    },
     getModel:function(){
       return this.model.getModel();
     },

@@ -1,8 +1,8 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
-  "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "name": "todolist-angular1",
+  "description": "Small application AngularJS 1",
+  "version": "0.0.1",
+  "homepage": "https://github.com/win-s/angular_todolist.git",
   "license": "MIT",
   "private": true,
   "dependencies": {
