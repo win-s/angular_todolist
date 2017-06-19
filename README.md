@@ -1,6 +1,6 @@
 # `ToDoList (AngularJS 1)`
 
-To do list web application base on AngularJs 1
+To do list web application base on AngularJS 1
 
 This todolist consist of two lists:
 1. Today todolist
