@@ -1,6 +1,6 @@
-# `ToDoList (AngularJS 1.x)`
+# `ToDoList (AngularJS 1)`
 
-To do list web application base on AngularJs 1.x
+To do list web application base on AngularJs 1
 
 This todolist consist of two lists:
 1. Today todolist
@@ -15,9 +15,9 @@ The user can add, remove and reorder task on each list.
 
 Cloning this repository and install the dependencies:
 
-### Clone `ToDoList (AngularJS 1.x)`
+### Clone `ToDoList (AngularJS 1)`
 
-Clone the `ToDoList (AngularJS 1.x)` repository using git:
+Clone the `ToDoList (AngularJS 1)` repository using git:
 
 ```
 git clone https://github.com/win-s/angular_todolist.git
