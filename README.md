@@ -6,7 +6,7 @@ This todolist consist of two lists:
 1. Today todolist
 2. Tomorrow todolist
 
-User can add,remove and reorder task on each list.
+The user can add, remove and reorder task on each list.
 
 
 
@@ -37,7 +37,7 @@ Now browse to the app at [`localhost:8000/index.html`]
 
 ## Code Design
 
-This design allow any controller changing todolist of today and tomorrow passby the services. Therefore, TodayCtrl can move its task to tomorrow and TomorrowCtrl can move this task back to Today.
+This design allows any controller changing list of today and tomorrow pass by the services. Therefore, TodayCtrl can move its task to tomorrow and TomorrowCtrl can move this task back to Today.
 
 ### Controllers
 
@@ -47,13 +47,13 @@ Todolist app consist of  two controllers:
 1. TodayCtrl : Controlling UI of today list
 2. TomorrowCtrl : Controlling UI of tomorrow list
 
-Each controllers get and update model pass by services (TodayService,TomorrowService).
+Each controller gets and updates model by using the services (TodayService, TomorrowService).
 
 ### Services
 
 ![PlantUML model](http://www.plantuml.com/plantuml/png/VP313e8m38RlUueU8P4N89wyUz8NA31r23HP6ubHtjqvG0Kcjsxxlgv_CMEnc0iSgQ3AiEoGzK7RcycregpK_HFU5tSrMKjj2DrJeQivs5ygNFdleM2GQWz3HLX4iOAp5g-_Q_xMNMX0ryJR4CbdbbWvzi_aORvR1dAW9q2GhmmbCZLm8bkZXDgFpdWEQSuAh06spoIPP8BKD1TjZQpXarGJOmW0YwvkhnktJpMNV_fvCuM1V040)
 
 Todolist app consist of two services:
-1. TodayService : only place to get and set TodayModel
-2. TomorrowService : only place to get and set TomorrowModel
+1. TodayService : The only place to get and set TodayModel
+2. TomorrowService : The only place to get and set TomorrowModel
 
