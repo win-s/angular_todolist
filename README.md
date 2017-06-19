@@ -37,7 +37,7 @@ Now browse to the app at [`localhost:8000/index.html`]
 
 ## Code Design
 
-This design allows any controller changing list of today and tomorrow pass by the services. Therefore, TodayCtrl can move its task to tomorrow and TomorrowCtrl can move this task back to Today.
+This design allows any controller changing list of today and tomorrow by calling the services. Therefore, TodayCtrl can move its task to tomorrow and TomorrowCtrl can move this task back to Today.
 
 ### Controllers
 
