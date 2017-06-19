@@ -2,7 +2,7 @@
 
 To do list web application base on AngularJs 1.x
 
-This totolist consist of two lists:
+This todolist consist of two lists:
 1. Today todolist
 2. Tomorrow todolist
 
